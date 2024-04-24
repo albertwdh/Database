@@ -1,0 +1,22 @@
+
+version: '3'
+services:
+  mysql:
+    restart: always
+    image: mysql:8.0
+    container_name: mysql3306
+    volumes:
+      - ./db:/var/lib/mysql
+      - ./conf/my.cnf:/etc/mysql/my.cnf
+      - ./logs:/var/log
+    command:
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+      --explicit_defaults_for_timestamp=true
+    environment:
+      MYSQL_ROOT_PASSWORD: "abc123456"
+      MYSQL_USER: "wdh"
+      MYSQL_PASSWORD: "abc123456"
+      MYSQL_INITDB_SKIP_TZINFO: "Asia/Shanghai"
+    ports:
+      - "3306:3306"
