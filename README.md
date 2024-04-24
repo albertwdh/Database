@@ -3,6 +3,12 @@
 
 
 ## windows
-> 安装docker-desktop
+> 安装docker
+> 
+> 运行.bat脚本
 
-> 运行脚本
+
+## linux
+> 安装docker
+>
+> 运行.sh脚本
