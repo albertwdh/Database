@@ -6,8 +6,8 @@ services:
     restart: always
     environment:
       - TZ=Asia/Shanghai
-      - MONGO_INITDB_DATABASE=demo
-      - MONGO_INITDB_ROOT_USERNAME=wdh
+      - MONGO_INITDB_DATABASE=admin
+      - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=abc123456
     ports:
       - "27017:27017"
