@@ -3,5 +3,5 @@
 
 
 ## windows
--- 安装docker-desktop
--- 运行脚本
+> 安装docker-desktop
+> 运行脚本
